@@ -1,0 +1,12 @@
+<!-- Tags are case Sensitive--> 
+<Project>
+    <ItemGroup>
+        <Person Include="Pankaj;Mahale"/>
+        <Person Include="Kumar"/>
+    </ItemGroup>
+    
+    <Target Name="Greet" >  
+        <Message Text="Hello @(Person)" Importance="High"/> 
+        <Message Text="@(Person->'Hello %(Identity)')" Importance="High"/>       
+    </Target>
+</Project>

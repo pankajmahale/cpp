@@ -1,0 +1,6 @@
+<!-- Tags are case Sensitive--> 
+<Project>
+    <Target Name="Greet">  <!-- Target are similar to function that executes. Target is colleation of tasks--> 
+        <Message Text="Hello World" Importance="high"/>
+    </Target>
+</Project>

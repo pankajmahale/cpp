@@ -1,0 +1,16 @@
+<!-- Tags are case Sensitive--> 
+<Project DefaultTargets="Greet">  
+
+    <Target Name="Greet" DependsOnTargets="quit" >  
+        <Message Text="Hello" />              
+    </Target>
+
+    <Target Name="Bye" >  
+        <Message Text="Byeee" Importance="High"/>              
+    </Target>
+
+    <Target Name="quit" AfterTargets="Greet">  
+           <CallTargets Targets="Bye"/>            
+    </Target>
+
+</Project>

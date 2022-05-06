@@ -1,0 +1,12 @@
+<!-- Tags are case Sensitive--> 
+<Project>
+    <PropertyGroup>
+        <MyMSG>Hello $(Persion).....</MyMSG>       
+    </PropertyGroup>
+    
+    <Target Name="Greet">  <!-- Target are similar to function that executes. Target is colleation of tasks--> 
+        <Message Text="$(MyMSG)" Importance="High"/>       
+    </Target>
+</Project>
+<!--  msbuild "3. Parameters.csproj" -p:Persion="Pankaj Mahale"   -->
+<!--  msbuild "3. Parameters.csproj" -p:MyMSG="Pankaj Mahale"   -->

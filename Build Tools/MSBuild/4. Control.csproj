@@ -1,0 +1,14 @@
+<!-- Tags are case Sensitive--> 
+<Project>
+    <PropertyGroup>
+        <MyMSG Condition="'$(Person)'!=''" >Hello $(Person).....</MyMSG>       
+    </PropertyGroup>
+    
+    <Target Name="Greet" Condition="'$(Greet)'!='false' and '$(Person)'!= '' ">  <!-- Target are similar to function that executes. Target is colleation of tasks--> 
+        <Message Text="$(MyMSG)" Importance="High"/>       
+    </Target>
+</Project>
+<!--  msbuild "4. Control.csproj" -p:Person=Pankaj   -->
+<!--  msbuild "4. Control.csproj" -p:Person=Pankaj -p:Greet=false   -->
+
+<!--https://youtu.be/B2nvNMW3LVQ?t=957 -->

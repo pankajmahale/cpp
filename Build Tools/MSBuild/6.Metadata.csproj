@@ -1,0 +1,17 @@
+<!-- Tags are case Sensitive--> 
+<Project>
+    <ItemDefinitionGroup>
+        <Person>
+            <Greeting>Hello %(Identity) !</Greeting>
+        </Person>
+    </ItemDefinitionGroup>
+
+    <ItemGroup>
+        <Person Include="Pankaj;Mahale"/>
+        <Person Include="Kumar" Greeting="Hey kumarrrrrr@"/>
+    </ItemGroup>    
+    <Target Name="Greet" >  
+        <Message Text="Hello @(Person)" Importance="High"/> 
+        <Message Text="%(Person.Greeting)" Importance="High"/>       
+    </Target>
+</Project>

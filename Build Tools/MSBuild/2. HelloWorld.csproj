@@ -1,0 +1,11 @@
+<!-- Tags are case Sensitive--> 
+<Project>
+    <PropertyGroup>
+        <MyMSG>Hello World.....</MyMSG>
+        <MyMSG1>Hello World.....111</MyMSG1>
+    </PropertyGroup>
+    <Target Name="Greet">  <!-- Target are similar to function that executes. Target is colleation of tasks--> 
+        <Message Text="$(MyMSG)" Importance="High"/>
+        <Message Text="$(MyMSG1)" Importance="high"/>
+    </Target>
+</Project>
