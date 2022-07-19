@@ -1,0 +1,3 @@
+/mnt/d/repos/cpp/Build Tools/CMake/Hello World/CMakeFiles/Hello.dir
+/mnt/d/repos/cpp/Build Tools/CMake/Hello World/CMakeFiles/edit_cache.dir
+/mnt/d/repos/cpp/Build Tools/CMake/Hello World/CMakeFiles/rebuild_cache.dir
